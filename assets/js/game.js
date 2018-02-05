@@ -46,35 +46,35 @@ function reset() {
   $("#total-score").text(totalScore);
 }
 
-function resetAlert() {
+function resetOutcome() {
   $("#game-outcome").text("");
   $("#game-outcome").css("animation", "none");
   $("#game-outcome").css("animationIterationCount", "0");
 }
 
 $("#button-one").on("click", function (event) {
-  resetAlert();
+  resetOutcome();
   totalScore += blueCrystalNumber;
   $("#total-score").text(totalScore);
   endConditions();
 });
 
 $("#button-two").on("click", function (event) {
-  resetAlert();
+  resetOutcome();
   totalScore += greenCrystalNumber;
   $("#total-score").text(totalScore);
   endConditions();
 });
 
 $("#button-three").on("click", function (event) {
-  resetAlert();
+  resetOutcome();
   totalScore += orangeCrystalNumber;
   $("#total-score").text(totalScore);
   endConditions();
 });
 
 $("#button-four").on("click", function (event) {
-  resetAlert();
+  resetOutcome();
   totalScore += purpleCrystalNumber;
   $("#total-score").text(totalScore);
   endConditions();
