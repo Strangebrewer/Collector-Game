@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 4.5em;
   font-weight: bold;
-  padding: 20px 0 5px 0;
+  padding: 20px 0 10px 0;
   text-align: center;
 }
 
@@ -52,23 +52,6 @@ h2 {
 h3 {
   font-size: 2em;
   padding: 25px 0;
-}
-
-h4 {
-  animation: opac .8s;
-  animation-iteration-count: infinite;
-  color: #e9922f;
-  font-size: 1.5em;
-  font-weight: bold;
-  padding-bottom: 10px;
-  text-align: center;
-  /* text-shadow: 0 0 10px #fff; */
-}
-
-@keyframes opac { 
-  0% { opacity:.4; }
-  50% { opacity: 1; }
-  100% { opacity:.4; }
 }
 
 p {
@@ -166,4 +149,24 @@ footer {
   padding: 20px 0;
   text-align: center;
   width: 960px;
+}
+
+@keyframes opac { 
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  20% { opacity: 0; }
+  30% { opacity: 1; }
+  40% { opacity: 0; }
+  50% { opacity: 1; }
+  60% { opacity: 0; }
+  70% { opacity: 1; }
+  80% { opacity: 0; }
+  82.5% { opacity: 1; }
+  85% { opacity: 0; }
+  87.5% { opacity: 1; }
+  90% { opacity: 0; }
+  92.5% { opacity: 1; }
+  95% { opacity: 0; }
+  97.5% { opacity: 1; }
+  100% { opacity: 1; }
 }
