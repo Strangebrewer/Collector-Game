@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Crystals Collector</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Ovo|Rammetto+One" rel="stylesheet">
 </head>
+
 <body>
-  
+  <div class="container">
+
+    <header>
+      <h1>Crystals Collector!</h1>
+      <h4 id="game-begin">Click Here To Begin</h4>
+    </header>
+
+    <div class="clearfix">
+
+      <div class="instructions">
+        <p>
+          You will be given a randomly generated Target Number at the start of the game.
+        </p>
+        <br>
+        <p>
+          There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your Total Score. The
+          value of each crystal is randomly generated at the start of each game and is hidden from you until you click on
+          it.
+        </p>
+        <br>
+        <p>
+          You win the game by matching your total score to the target number. You lose if your total score goes above the target number.
+        </p>
+      </div>
+
+      <div class="game-data">
+        <p id="game-outcome"></p>
+        <p>Wins:
+          <span id="wins"></span>
+        </p>
+        <p>Losses:
+          <span id="losses"></span>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="numbers clearfix">
+      <div class="target">
+        <h2>Target Number</h2>
+        <h3 id="target-number"></h3>
+      </div>
+
+      <div class="score">
+        <h2>Your Total Score</h2>
+        <h3 id="total-score"></h3>
+      </div>
+    </div>
+
+    <div class="crystals">
+      <button class="button" id="button-one">
+        <img class="btn-image" src="assets/images/crystal_blue.png" alt="blue crystal">
+      </button>
+      <button class="button" id="button-two">
+        <img class="btn-image" src="assets/images/crystal_green.png" alt="green crystal">
+      </button>
+      <button class="button" id="button-three">
+        <img class="btn-image" src="assets/images/crystal_orange.png" alt="orange crystal">
+      </button>
+      <button class="button" id="button-four">
+        <img class="btn-image" src="assets/images/crystal_purple.png" alt="purple crystal">
+      </button>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <footer>
+      <p>
+        &#9400;Copyright 2018 Keith Allmon
+      </p>
+    </footer>
+  </div>
+<script src="assets/js/jquery-3.3.1.js"></script>
+  <script src="assets/js/game.js"></script>
 </body>
+
 </html>
