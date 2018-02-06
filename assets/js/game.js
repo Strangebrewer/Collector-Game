@@ -30,7 +30,7 @@ function endConditions() {
     $("#losses").text(losses);
     reset();
     $("#game-outcome").text("You Lose!");
-    $("#game-outcome").css("animation", "opa2 1.5s");
+    $("#game-outcome").css("animation", "opac 1.5s");
     $("#game-outcome").css("animationIterationCount", "1");
   }
 }
