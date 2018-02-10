@@ -11,6 +11,10 @@ $("#target-number").text(targetNumber);
 $("#wins").text(wins);
 $("#losses").text(losses);
 $("#total-score").text(totalScore);
+$("#button-one").attr("value", blueCrystalNumber);
+$("#button-two").attr("value", greenCrystalNumber);
+$("#button-three").attr("value", orangeCrystalNumber);
+$("#button-four").attr("value", purpleCrystalNumber);
 
 function randomIntFromInterval(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
@@ -41,6 +45,10 @@ function reset() {
   greenCrystalNumber = randomIntFromInterval(1, 12);
   orangeCrystalNumber = randomIntFromInterval(1, 12);
   purpleCrystalNumber = randomIntFromInterval(1, 12);
+  $("#button-one").attr("value", blueCrystalNumber);
+  $("#button-two").attr("value", greenCrystalNumber);
+  $("#button-three").attr("value", orangeCrystalNumber);
+  $("#button-four").attr("value", purpleCrystalNumber);
   totalScore = 0;
   $("#target-number").text(targetNumber);
   $("#total-score").text(totalScore);
@@ -52,30 +60,41 @@ function resetOutcome() {
   $("#game-outcome").css("animationIterationCount", "0");
 }
 
-$("#button-one").on("click", function (event) {
+$(".button").on("click", function () {
   resetOutcome();
-  totalScore += blueCrystalNumber;
+  totalScore += parseInt(this.value);
   $("#total-score").text(totalScore);
   endConditions();
 });
 
-$("#button-two").on("click", function (event) {
-  resetOutcome();
-  totalScore += greenCrystalNumber;
-  $("#total-score").text(totalScore);
-  endConditions();
-});
+// I wonder if I could give each button an attribute equal to the object name...
 
-$("#button-three").on("click", function (event) {
-  resetOutcome();
-  totalScore += orangeCrystalNumber;
-  $("#total-score").text(totalScore);
-  endConditions();
-});
+// These are the original buttons replaced by using "this"
 
-$("#button-four").on("click", function (event) {
-  resetOutcome();
-  totalScore += purpleCrystalNumber;
-  $("#total-score").text(totalScore);
-  endConditions();
-});
+// $("#button-one").on("click", function (event) {
+//   resetOutcome();
+//   totalScore += blueCrystalNumber;
+//   $("#total-score").text(totalScore);
+//   endConditions();
+// });
+
+// $("#button-two").on("click", function (event) {
+//   resetOutcome();
+//   totalScore += greenCrystalNumber;
+//   $("#total-score").text(totalScore);
+//   endConditions();
+// });
+
+// $("#button-three").on("click", function (event) {
+//   resetOutcome();
+//   totalScore += orangeCrystalNumber;
+//   $("#total-score").text(totalScore);
+//   endConditions();
+// });
+
+// $("#button-four").on("click", function (event) {
+//   resetOutcome();
+//   totalScore += purpleCrystalNumber;
+//   $("#total-score").text(totalScore);
+//   endConditions();
+// });
