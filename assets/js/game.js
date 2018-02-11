@@ -66,35 +66,3 @@ $(".button").on("click", function () {
   $("#total-score").text(totalScore);
   endConditions();
 });
-
-// I wonder if I could give each button an attribute equal to the object name...
-
-// These are the original buttons replaced by using "this"
-
-// $("#button-one").on("click", function (event) {
-//   resetOutcome();
-//   totalScore += blueCrystalNumber;
-//   $("#total-score").text(totalScore);
-//   endConditions();
-// });
-
-// $("#button-two").on("click", function (event) {
-//   resetOutcome();
-//   totalScore += greenCrystalNumber;
-//   $("#total-score").text(totalScore);
-//   endConditions();
-// });
-
-// $("#button-three").on("click", function (event) {
-//   resetOutcome();
-//   totalScore += orangeCrystalNumber;
-//   $("#total-score").text(totalScore);
-//   endConditions();
-// });
-
-// $("#button-four").on("click", function (event) {
-//   resetOutcome();
-//   totalScore += purpleCrystalNumber;
-//   $("#total-score").text(totalScore);
-//   endConditions();
-// });
