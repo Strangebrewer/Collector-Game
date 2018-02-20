@@ -1,3 +1,3 @@
 # Collector-Game
 
-Week 4 basic homework using jQuery.
+Week 5 basic homework using jQuery.
