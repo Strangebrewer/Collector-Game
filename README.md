@@ -1,2 +1,3 @@
 # Collector-Game
-Crystal Collector game using jQuery
+
+Week 4 basic homework using jQuery.
