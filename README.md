@@ -1,3 +1,3 @@
 # Collector-Game
 
-Week 5 basic homework using jQuery.
+My fifth homework assignment and first jQuery assignment.
